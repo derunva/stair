@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+img{
+  max-width: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  line-height: 26px;
+}
+.page{
+  overflow-y: scroll;
+  flex: 1 auto;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1170px;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+.header__main{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.wrapper_full-width{
+  max-width: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+[class*="column-"]{
+  width: 100%;
+  padding: 0 15px;
+}
+.column-logo,.column-main-nav{
+  width: auto;
+}
+.main-nav__opener{
+  position: relative;
+  z-index: 5;
+}
+
+.main-nav__opener .fas{
+  font-size: 3em;
+  color: #636363;
+  cursor: pointer;
+}
+.header__main .row{
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.main-nav ul{
+  position: fixed;
+  top:0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: rgba(255,255,255,.8);
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  transition: left .5s ease;
+  list-style: none;
+  flex-direction: column;
+}
+.main-nav.is-active ul{
+  left: 0;
+}
+.main-nav ul li:first-child{
+  margin-top: auto;
+}
+.main-nav ul li:last-child{
+  margin-bottom:  auto;
+}
+.main-nav ul li.is-active a{
+  
+}
+@media (min-width: 1050px){
+  .main-nav__opener{
+    display: none;
+  }
+  .main-nav ul{
+    position: static;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .main-nav ul li{
+
+  }
+  .main-nav ul a{
+    
+  }
+}
+.header{
+  position: relative;
+  z-index: 4;
+}
+a{
+  color: inherit;
+}
+[href^="tel:"],[href^="mailto:"]{
+  text-decoration: none;
+}
+.header__line{
+  text-align: center;
+  background: #f2f2f2;
+  color: #636363;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 7px 0;
+}
+.logo{
+  display: inline-block;
+}
+.header__line a{
+  font-weight: 500;
+}
+.header_fixed{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+}
+.footer{
+  background: #333;
+  color: #fff;
+  margin-top: auto;
+}
