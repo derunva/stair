@@ -47,8 +47,15 @@ body{
   width: 100%;
   padding: 0 15px;
 }
+.ta-center{
+  text-align: center;
+}
 .section{
   padding: 60px 0 30px;
+}
+.section_green{
+  color: #fff;
+  background: #98c63f;
 }
 .section__title{
   color: #1f1f1f;
@@ -56,8 +63,53 @@ body{
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+.section_green .section__title{
+  color: #fff;
+}
 .column-logo,.column-main-nav{
   width: auto;
+}
+.promice{
+  text-align: center;
+}
+.promice__icon{
+  min-height: 90px;
+  color: #98c63f;
+  font-size: 72px;
+}
+.promice__title{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #98c63f;
+  font-family: "Poppins", sans-serif;
+}
+.promice__text{
+  color: #7d7d7d;
+}
+.info{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info__icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #98c63f;
+  border-radius: 2px;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  margin-right: 25px;
+}
+.info__text{
+  color: #7d7d7d;
+  padding-top: 10px;
+}
+@media (min-width: 560px){
+  .info{
+    display: flex;
+  }
 }
 .stairlift-type{
   text-align: center;
@@ -140,6 +192,10 @@ a{
 [href^="tel:"],[href^="mailto:"]{
   text-decoration: none;
 }
+
+.content-text a{
+  font-weight: bold;
+}
 .header__line{
   text-align: center;
   background: #f2f2f2;
@@ -166,6 +222,9 @@ a{
   background: #333;
   color: #fff;
   margin-top: auto;
+}
+.m-b-20{
+  margin-bottom: 20px;
 }
 .m-b-40{
   margin-bottom: 40px;

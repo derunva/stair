@@ -1,0 +1,23 @@
+.icon {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-delivery {
+    width: 73px;
+    height: 36px;
+    background-position: -5px -5px;
+}
+
+.icon-headphones {
+    width: 51px;
+    height: 49px;
+    background-position: -5px -51px;
+}
+
+.icon-wrench {
+    width: 66px;
+    height: 66px;
+    background-position: -88px -5px;
+}
